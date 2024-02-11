@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./static/javascript/welcome.js"></script>
+    <title>face recognition</title>
+</head>
+<body>
+    <input type="button" value="registerFaces">
+    <input id="recognize" type="button" value="recognize faces">
+    <script>
+        document.querySelector("#recognize").addEventListener("click",()=>{
+            window.location.href="/recognizeFaces"
+        })
+        document.querySelector("[value=registerFaces]").addEventListener("click",()=>{
+            window.location.href="/registerFaces"
+        })
+    </script>
+</body>
+</html>
